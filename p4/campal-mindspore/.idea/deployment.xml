@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="deep-active-learning" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="10.214.224.237">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/deep-active-learning" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="10.214.224.240">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/deep-active-learning" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="10.214.224.246">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/deep-active-learning" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="10.214.241.233">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/deep-active-learning" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="10.214.242.191">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/deep-active-learning" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="10.214.242.195">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/deep-active-learning" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="yjn@10.214.242.195:54322 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/yjn/deep-active-learning" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

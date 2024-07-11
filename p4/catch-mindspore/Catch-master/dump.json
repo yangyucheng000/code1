@@ -1,0 +1,14 @@
+{
+    "common_dump_settings": {
+        "dump_mode": 0,
+        "path": "./dump_data",
+        "net_name": "CATCH",
+        "iteration": "0|5-8|100-120",
+        "saved_data": "tensor",
+        "input_output": 0,
+        "kernels": ["Default/Conv-op12"],
+        "support_device": [0,1,2,3,4,5,6,7],
+        "op_debug_mode": 0,
+        "file_format": "npy"
+    }
+}

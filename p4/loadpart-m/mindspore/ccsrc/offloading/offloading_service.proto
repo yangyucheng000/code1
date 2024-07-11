@@ -1,0 +1,106 @@
+syntax = "proto3";
+
+package offloading_serving;
+
+// service OffloadingService {
+//   rpc Predict(PredictRequest) returns (PredictReply) {}
+//   rpc Deploy(DeployRequest) returns (DeployReply) {}
+//   rpc Profile(ProfileRequest) returns (ProfileReply) {}
+//   rpc TestUploadBandwidth(SimpleRequest) returns (SimpleReply) {}
+//   rpc TestDownloadBandwidth(SimpleRequest) returns (SimpleReply) {}
+// }
+
+service BatchOffloadingService {
+  rpc Predict(PredictRequest) returns (PredictReply) {}
+  rpc Deploy(DeployRequest) returns (DeployReply) {}
+  rpc Profile(ProfileRequest) returns (ProfileReply) {}
+  rpc TestUploadBandwidth(SimpleRequest) returns (SimpleReply) {}
+  rpc TestDownloadBandwidth(SimpleRequest) returns (SimpleReply) {}
+}
+
+message SimpleRequest {
+  repeated bytes dumb = 1;
+}
+
+message SimpleReply {
+  repeated bytes dumb = 1;
+  double q_time = 2;
+  double factor = 3;
+}
+
+message PredictRequest {
+  int32 lg_idx = 1;
+  string cut_point = 2;
+  repeated QuantTensorProto tensor = 3;
+}
+
+message PredictReply {
+  double q_time = 1;
+  double factor = 2;
+  repeated TensorProto tensor = 3;
+}
+
+message DeployRequest {
+  string file_name = 1;
+}
+
+message DeployReply {
+  string s = 1;
+}
+
+message ProfileRequest {
+  string file_name = 1;
+}
+
+message ProfileReply {
+  GraphProfile profiles = 1;
+}
+
+message TensorProto {
+  enum DataType {
+    UNDEFINED = 0;
+    // Basic types.
+    FLOAT = 1;   // float
+    UINT8 = 2;   // uint8_t
+    INT8 = 3;    // int8_t
+    UINT16 = 4;  // uint16_t
+    INT16 = 5;   // int16_t
+    INT32 = 6;   // int32_t
+    INT64 = 7;   // int64_t
+    STRING = 8;  // string
+    BOOL = 9;    // bool
+    FLOAT16 = 10;
+    DOUBLE = 11;
+    UINT32 = 12;
+    UINT64 = 13;
+    COMPLEX64 = 14;
+    COMPLEX128 = 15;
+    BFLOAT16 = 16;
+    FLOAT64 = 17;
+  }
+  repeated int64 dims = 1;
+  int32 data_type = 2;
+  string name = 3;
+  bool compressed = 4;
+  bytes raw_data = 5;
+}
+
+message QuantTensorProto {
+  TensorProto tensor = 1;
+  TensorProto max = 2;
+  TensorProto min = 3;
+}
+
+message GraphProfile {
+  message ProfileEntry {
+    string name = 1;
+    float time = 2;
+  }
+  
+  message BatchProfileEntry {
+    int32 batch_size = 1;
+    repeated ProfileEntry profile = 2;
+  }
+  
+  repeated BatchProfileEntry entries = 1;
+}

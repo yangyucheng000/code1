@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a82e9b87-9fe5-46d6-821d-9e7e4142482b" name="10.214.241.233">
+        <fileTransfer rootFolder="/home/yangjianan" accessType="SFTP" host="10.214.241.233" port="22" sshConfigId="a660d278-7a8f-4ef3-af29-c724a2251361" sshConfig="yangjianan@10.214.241.233:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="5a6db2f3-d4e9-463e-ae56-596a61cbf7aa" name="10.214.224.246">
+        <fileTransfer rootFolder="/home/yjn" accessType="SFTP" host="10.214.224.246" port="54322" sshConfigId="3b95e604-7117-4483-bebf-daf11061271d" sshConfig="yjn@10.214.224.246:54322 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="76b1baae-a14c-4146-abe7-0cd301633ebc" name="10.214.242.195">
+        <fileTransfer rootFolder="/home/yjn" accessType="SFTP" host="10.214.242.195" port="54322" sshConfigId="4c85f1b5-e0d1-4cfd-b98f-2c1cf2368a43" sshConfig="yjn@10.214.242.195:54322 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="febc9532-211e-4559-911e-bb494a50886a" name="10.214.242.191">
+        <fileTransfer rootFolder="/home/pc/yjn" accessType="SFTP" host="10.214.242.191" port="54322" sshConfigId="3208a4d1-f365-4f91-9785-4ddcfd524a85" sshConfig="pc@10.214.242.191:54322 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="ea81ddb6-ef0d-4e37-9b92-cd4274fff5ad" name="10.214.224.237">
+        <fileTransfer rootFolder="/home/yjn" accessType="SFTP" host="10.214.224.237" port="54322" sshConfigId="806c419f-d770-4e56-b532-516390c71ad4" sshConfig="yjn@10.214.224.237:54322 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="46a53392-ff11-40ab-883c-dd244fc32d77" name="10.214.224.240">
+        <fileTransfer rootFolder="/home/yangjn" accessType="SFTP" host="10.214.224.240" port="20205" sshConfigId="38beaf7e-1077-4d87-bdbe-2c0166daeda1" sshConfig="yangjn@10.214.224.240:20205 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+    <groups>
+      <group>
+        <name>deep-active-learning</name>
+        <servers>
+          <name value="10.214.241.233" />
+          <name value="10.214.224.246" />
+          <name value="10.214.242.195" />
+          <name value="10.214.242.191" />
+          <name value="10.214.224.237" />
+          <name value="10.214.224.240" />
+        </servers>
+      </group>
+    </groups>
+  </component>
+</project>

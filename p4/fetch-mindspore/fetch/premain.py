@@ -1,0 +1,16 @@
+import os
+# print("##########")
+# print(os.getcwd())
+# print("##########")
+# a = os.path.dirname(os.path.realpath(__file__))
+# print(a)
+# print("##########")
+# print(os.listdir("/cache/code/fetch"))
+# print("##########")
+# ret = os.system("pwd")
+# ret = os.system("pip install tree")
+# ret = os.system("tree")
+# ret = os.system("pip install -r /cache/code/fetch/requirements.txt")
+# ret = os.system(". /cache/code/fetch/main_attention.py")
+
+ret = os.system("bash /tmp/code/fetch-mindspore/fetch/run_table_1.sh")
